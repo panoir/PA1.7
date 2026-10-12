@@ -5,6 +5,9 @@ def main():
     values = [1, 2, 3, 0, 4]
     total = 0
     for v in values:
+        if v == 0:
+            print("Warning: Division by zero encountered. Skipping this value.")
+            continue
         total += compute_ratio(10, v)
     print("Total:", total)
 
